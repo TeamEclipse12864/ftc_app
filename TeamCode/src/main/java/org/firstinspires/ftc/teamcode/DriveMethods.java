@@ -47,17 +47,17 @@ public class DriveMethods extends HardwarePushBot{
 
         // Opening the GlyphLift claws to grab the glyph
     public static void openGlyph (){
-        glyphLiftRight.setPosition(0.5);//0.55
+        glyphLiftRight.setPosition(0.55);//0.55
         glyphLiftLeft.setPosition(0.4);//0.4
-        glyphLiftRight2.setPosition(0.5);
+        glyphLiftRight2.setPosition(0.55);
         glyphLiftLeft2.setPosition(0.4);
     }
 
     //Closing the GlyphLift claws to gain posession og glyph
     public static void closeGlyph (){
-        glyphLiftRight.setPosition(0.2);
+        glyphLiftRight.setPosition(0.25);
         glyphLiftLeft.setPosition(0.6);
-        glyphLiftRight2.setPosition(0.2);
+        glyphLiftRight2.setPosition(0.25);
         glyphLiftLeft2.setPosition(0.6);
     }
 

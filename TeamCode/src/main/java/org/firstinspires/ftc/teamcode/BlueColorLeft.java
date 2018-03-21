@@ -65,13 +65,14 @@ public class BlueColorLeft extends LinearOpMode {
         driveMethod(0, 0, 2.5);
         //Step 3. Drop the color sensor in between the jewels and take reading
         colorSensorArmRotate.setPosition(0.45);
+
         doNothing();
 
-        driveMethod(FORWARD_SPEED * 0.4, FORWARD_SPEED * 0.4, 0.5);
+        driveMethod(FORWARD_SPEED * 0.4, FORWARD_SPEED * 0.4 , 0.4);
+
+        doNothing();
 
         colorSensorArm.setPosition(1);
-
-        doNothing();
 
         runtime.reset();
 
@@ -106,7 +107,7 @@ public class BlueColorLeft extends LinearOpMode {
 
             doNothing();
 
-            colorSensorArmRotate.setPosition(0.4);
+            colorSensorArmRotate.setPosition(0.5);
 
             doNothing();
 
@@ -122,7 +123,8 @@ public class BlueColorLeft extends LinearOpMode {
             doNothing();
 
             //Step 9. Lift glyph lift for 0.8 seconds
-            robot.glyphLift.setPower(0.15);
+            robot.glyphLift.setPower(0.2);
+
             runtime.reset();
             while (opModeIsActive() && (runtime.seconds() < 0.8)) {
                 telemetry.addData("Path", "Leg 1: %2.5f S Elapsed", runtime.seconds());
@@ -130,12 +132,12 @@ public class BlueColorLeft extends LinearOpMode {
             }
 
             //Step 10. Turn Left for 1.4 seconds
-            driveMethod(TURN_SPEED * 0.3, -TURN_SPEED * 0.3, 2.0);
+            driveMethod(TURN_SPEED * 0.3, -TURN_SPEED * 0.3, 2.4);
 
             doNothing();
 
             //Step 11. Drive forward into parking spot for 2.2 seconds
-            driveMethod(FORWARD_SPEED * 0.5, FORWARD_SPEED * 0.5, 1.8);
+            driveMethod(FORWARD_SPEED * 0.5, FORWARD_SPEED * 0.5, 1.6);
 
             doNothing();
 
@@ -161,10 +163,14 @@ public class BlueColorLeft extends LinearOpMode {
 
             doNothing();
 
+            DriveMethods.openGlyph();
+
         }else {
             //Step 6. Turn Right for 1.6 seconds and set color sensor back
             colorSensorArmRotate.setPosition(1);
+
             doNothing();
+
             colorSensorArmRotate.setPosition(0.5);
 
             doNothing();
@@ -182,7 +188,8 @@ public class BlueColorLeft extends LinearOpMode {
             doNothing();
 
             //Step 9. Lift glyph lift for 0.8 seconds
-            robot.glyphLift.setPower(0.15);
+            robot.glyphLift.setPower(0.2);
+
             runtime.reset();
             while (opModeIsActive() && (runtime.seconds() < 0.8)) {
                 telemetry.addData("Path", "Leg 1: %2.5f S Elapsed", runtime.seconds());
@@ -190,12 +197,12 @@ public class BlueColorLeft extends LinearOpMode {
             }
 
             //Step 10. Turn Left for 1.4 seconds
-            driveMethod(TURN_SPEED * 0.3, -TURN_SPEED * 0.3, 2.0);
+            driveMethod(TURN_SPEED * 0.3, -TURN_SPEED * 0.3, 2.4);
 
             doNothing();
 
             //Step 11. Drive forward into parking spot for 2.2 seconds
-            driveMethod(FORWARD_SPEED * 0.5, FORWARD_SPEED * 0.5, 1.8);
+            driveMethod(FORWARD_SPEED * 0.5, FORWARD_SPEED * 0.5, 1.6);
 
             doNothing();
 

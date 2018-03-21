@@ -63,10 +63,10 @@ public class HardwarePushBot{
 
         //glyphlift subsystem
         glyphLift = hwMap.dcMotor.get("gl");        //1
-        glyphLiftRight = hwMap.servo.get("glr");    //0
-        glyphLiftLeft = hwMap.servo.get("gll");     //1
-        glyphLiftRight2 = hwMap.servo.get("glr2");
-        glyphLiftLeft2 = hwMap.servo.get("gll2");
+        glyphLiftRight = hwMap.servo.get("glr");    //2
+        glyphLiftLeft = hwMap.servo.get("gll");     //3
+        glyphLiftRight2 = hwMap.servo.get("glr2");  //4
+        glyphLiftLeft2 = hwMap.servo.get("gll2");   //5
 
 
         //Claw subsytem
@@ -74,7 +74,7 @@ public class HardwarePushBot{
         //relicPosition = hwMap.dcMotor.get("rp");    //2
 
         //Color Sensor
-        colorSense = hwMap.colorSensor.get("cs");     //12 Bus0
+        colorSense = hwMap.colorSensor.get("cs");     //12 Bus3
         colorSensorArm = hwMap.servo.get("csa");      //4
         colorSensorArmRotate = hwMap.servo.get("csa1");
 

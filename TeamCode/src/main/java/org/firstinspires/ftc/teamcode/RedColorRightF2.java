@@ -17,8 +17,8 @@ import static org.firstinspires.ftc.teamcode.HardwarePushBot.colorSensorArmRotat
  */
 
 
-@Autonomous (name = "Red ColorSensor Right", group = "Autonomous")
-public class RedColorRight extends LinearOpMode{
+@Autonomous (name = "Red ColorSensor Right Field 2", group = "Autonomous")
+public class RedColorRightF2 extends LinearOpMode{
     HardwarePushBot robot = new HardwarePushBot();
     private ElapsedTime runtime = new ElapsedTime();
 
@@ -67,7 +67,7 @@ public class RedColorRight extends LinearOpMode{
         colorSensorArmRotate.setPosition(0.45);
         doNothing();
 
-        driveMethod(FORWARD_SPEED * 0.4, FORWARD_SPEED * 0.4, 0.4);
+        driveMethod(FORWARD_SPEED * 0.4, FORWARD_SPEED * 0.4, 0.5);
         colorSensorArm.setPosition(1);
 
         doNothing();
@@ -82,7 +82,7 @@ public class RedColorRight extends LinearOpMode{
 
 
             //Step 4. Read the color of jewels
-            if (colorSense.red() >(colorSense.blue() + 20 )) {
+            if (colorSense.red() >(colorSense.blue())) {
                 color = 0;
                 telemetry.addData(colorSense.red()+"I see red!", "RED");
                 telemetry.update();

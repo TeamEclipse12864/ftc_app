@@ -58,7 +58,7 @@ public class RedColorLeft extends LinearOpMode {
         DriveMethods.closeGlyph();
 
         //Step 2. Drive backwards for 0.3 seconds
-        colorSense.enableLed(true);
+        colorSense.enableLed(false);
 
         driveMethod(-FORWARD_SPEED * 0.2 , -FORWARD_SPEED * 0.2, 0.5);
 
